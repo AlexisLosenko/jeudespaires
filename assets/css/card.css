@@ -1,0 +1,65 @@
+img{
+		cursor:pointer;
+	}
+
+
+body {
+    background-color: black;
+}
+
+
+
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 65px 5px 65px 5px 65px 5px 65px 5px 65px 5px 65px;
+  grid-template-rows: 100px 5px 100px;
+  grid-gap: 0;
+  padding-left: 20%;
+}
+
+.card {
+    position: relative;
+    margin: 100px auto;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1.0s cubic-bezier(0,.75,.25,1);
+}
+
+.face {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.side2 {
+    transform: rotateY(180deg);
+}
+
+.card0{
+
+  grid-column-start: 1;
+  grid-column-end:1;
+  grid-row-start:1;
+  grid-row-end: 1;
+}
+.card1{
+
+  grid-column-start: 5;
+  grid-column-end:5;
+  grid-row-start:1;
+  grid-row-end: 1;
+}
+.card2{
+
+  grid-column-start: 3;
+  grid-column-end:3;
+  grid-row-start:1;
+  grid-row-end: 1;
+}
+.card3{
+
+  grid-column-start:1;
+  grid-column-end:1;
+  grid-row-start:3;
+  grid-row-end: 3;
+}
